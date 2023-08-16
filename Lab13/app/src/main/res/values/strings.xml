@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab13</string>
+    <string-array name="list_array">
+        <item>Ram</item>
+        <item>Hari</item>
+        <item>Sita</item>
+        <item>Gita</item>
+        <item>Rita</item>
+        <item>Lita</item>
+
+    </string-array>
+</resources>
