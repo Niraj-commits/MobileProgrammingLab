@@ -1,4 +1,4 @@
-package com.example.anotheractivity;
+package com.example.internallab2;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 
 public class Form extends Activity {
     Button submitBtn;
+
     EditText firstName, lastName, selectClass, address, roll;
     RadioGroup genderGroup;
     RadioButton genderBtn;
@@ -41,12 +42,13 @@ public class Form extends Activity {
                 String selectaddress = address.getText().toString();
                 String selectroll = roll.getText().toString();
                 Intent report = new Intent(getApplicationContext(), Report.class);
-                report.putExtra("First Name: ", firstname);
-                report.putExtra("Last Name: ", lastname);
-                report.putExtra("Class: ", selectclass);
-                report.putExtra("Address: ", selectaddress);
-                report.putExtra("Gender: ", gender);
-                report.putExtra("Roll Number: ", selectroll);
+                report.putExtra("First Name", firstname);
+                report.putExtra("Last Name", lastname);
+                report.putExtra("Class", selectclass);
+                report.putExtra("Address", selectaddress);
+                report.putExtra("Gender", gender);
+                report.putExtra("Roll Number", selectroll);
+                startActivity(report);
             }
         });
 

@@ -34,8 +34,4 @@
         android:layout_gravity="center"
         android:layout_margin="20dp"
         android:id="@+id/txtResult"/>
-
-
-
-
 </LinearLayout>
